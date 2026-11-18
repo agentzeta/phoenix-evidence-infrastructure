@@ -1,15 +1,17 @@
 # Phoenix Evidence Infrastructure
 
-Customer-facing static website for Phoenix. The interactive evaluation dashboard uses **synthetic data only**. No customer, efficacy, certification or production-monitoring claim is made.
+Customer-facing website with a synthetic interactive agent evaluation demo.
 
-## Run
-Serve `site/` using any static web server. No dependencies or build step.
+## GitHub Pages
 
-## Features
-Task-specific comparison, outcome denominators, configuration-change stale-evidence demonstration, inspectable failure summaries, JSON evidence export and a local-only pilot brief generator. The brief does not contact the company.
+The complete site is at the repository root: index.html, style.css and app.js. No build, package installation or custom Actions workflow is required.
 
-## Deployment
-GitHub Actions publishes `site/` to GitHub Pages. If Pages is not enabled, repository settings → Pages → Source → GitHub Actions. Run the Deploy website workflow. Expected URL: https://agentzeta.github.io/phoenix-evidence-infrastructure/
+In Settings → Pages select **Deploy from a branch**, **main**, **/(root)** and Save. GitHub's built-in Pages deployment publishes:
 
-## Privacy and scope
-No analytics, external fonts or backend. Hosting logs are outside the browser demo. Production evaluation and monitoring integrations are planned. No patent specifications or private fundraising materials are included.
+https://agentzeta.github.io/phoenix-evidence-infrastructure/
+
+The setting must be enabled before that URL serves the site. The old custom workflow was removed after it failed before running steps. The original site/ copy is retained for compatibility; root files are the Pages publication source.
+
+## Demo scope
+
+Task-specific ranking, failure inspection, stale-evidence warnings and local JSON downloads use synthetic data. The pilot brief is saved locally and does not submit an enquiry. Production monitoring is planned. No customer data, private patent specifications or investment documents are included.
